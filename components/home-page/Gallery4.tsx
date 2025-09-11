@@ -12,18 +12,10 @@ import {
 } from "@/components/ui/carousel";
 import {TextAnimate} from "@/components/magicui/text-animate";
 
-export interface Gallery4Item {
-    id: string;
-    title: string;
-    description: string;
-    href: string;
-    image: string;
-}
 
 export interface Gallery4Props {
     title?: string;
     description?: string;
-    items: Gallery4Item[];
 }
 
 const data = [
@@ -84,7 +76,7 @@ const Gallery4 = ({
     const [canScrollNext, setCanScrollNext] = useState(false);
     const [currentSlide, setCurrentSlide] = useState(0);
     const items = data
-    
+
     useEffect(() => {
         if (!carouselApi) {
             return;
