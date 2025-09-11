@@ -78,13 +78,13 @@ const Gallery4 = ({
                       title = "Jaké služby nabízím?",
                       description = "Každý interiér je jiný a každý zákazník má jinou představu." +
                       " Podívejte se na několik příkladů, jak proměňujeme byty, domy i kanceláře",
-                      items = data,
                   }: Gallery4Props) => {
     const [carouselApi, setCarouselApi] = useState<CarouselApi>();
     const [canScrollPrev, setCanScrollPrev] = useState(false);
     const [canScrollNext, setCanScrollNext] = useState(false);
     const [currentSlide, setCurrentSlide] = useState(0);
-
+    const items = data
+    
     useEffect(() => {
         if (!carouselApi) {
             return;
