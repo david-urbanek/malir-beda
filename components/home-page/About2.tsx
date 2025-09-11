@@ -41,7 +41,7 @@ const About2 = () => {
                     </h2>
                     <div className="grid grid-cols-2 gap-6 md:grid-cols-3">
                         <div className="flex flex-col gap-6 border-b pb-8">
-                            <div className="text-4xl font-medium md:text-5xl flex justify-center gap-1">
+                            <div className="text-4xl font-medium md:text-5xl flex gap-1">
                                 <NumberTicker
                                 value={250}
                             />
@@ -50,7 +50,7 @@ const About2 = () => {
                             <p className="text-muted-foreground">Spokojených zákazníků</p>
                         </div>
                         <div className="flex flex-col gap-6 border-b pb-8">
-                            <div className="text-4xl font-medium md:text-5xl flex justify-center gap-1">
+                            <div className="text-4xl font-medium md:text-5xl flex gap-1">
                                 <NumberTicker
                                     value={22}
                                 />
@@ -59,7 +59,7 @@ const About2 = () => {
                             <p className="text-muted-foreground">Let zkušeností</p>
                         </div>
                         <div className="flex flex-col gap-6 border-b pb-8">
-                            <div className="text-4xl font-medium md:text-5xl flex justify-center gap-1">
+                            <div className="text-4xl font-medium md:text-5xl flex gap-1">
                                 <NumberTicker
                                     value={654}
                                 />
