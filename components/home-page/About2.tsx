@@ -13,7 +13,7 @@ const About2 = () => {
                         </TextAnimate>
                         <p className="text-lg text-muted-foreground md:text-xl">
                             Jsem zkušený malíř pokojů s více než 12 lety praxe. Vím, že malování není jen o barvě
-                            na stěně, ale o pocitu domova. Pracuji pečlivě, čistě a vždy s ohledem na vaše přání.
+                            na stěně, ale o pocitu domova. Pracuji pečlivě, čistě a vždy s ohledem na Vaše přání.
                             Používám kvalitní barvy, které vydrží a rozzáří váš interiér
                         </p>
                     </div>
