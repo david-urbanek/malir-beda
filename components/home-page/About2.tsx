@@ -8,7 +8,7 @@ const About2 = () => {
             <div className="flex flex-col gap-28">
                 <div className="container flex flex-col gap-10 text-center md:gap-24">
                     <div className="mx-auto flex max-w-3xl flex-col gap-6">
-                        <TextAnimate animation="blurInUp" by="character" as="h2" className="text-4xl font-medium md:text-6xl" duration={0.6}>
+                        <TextAnimate animation="blurInUp" by="character" as="h2" className="text-4xl font-medium md:text-6xl break-words" duration={0.6}>
                             Kdo jsem a proč mě zákazníci tak často doporučují
                         </TextAnimate>
                         <p className="text-lg text-muted-foreground md:text-xl">
