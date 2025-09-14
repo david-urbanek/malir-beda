@@ -14,7 +14,7 @@ const About2 = () => {
                         <p className="text-lg text-muted-foreground md:text-xl">
                             Jsem zkušený malíř pokojů s více než 12 lety praxe. Vím, že malování není jen o barvě
                             na stěně, ale o pocitu domova. Pracuji pečlivě, čistě a vždy s ohledem na Vaše přání.
-                            Používám kvalitní barvy, které vydrží a rozzáří váš interiér
+                            Používám kvalitní barvy, které vydrží a rozzáří Váš interiér
                         </p>
                     </div>
                     <div className="grid gap-6 md:grid-cols-12">
