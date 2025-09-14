@@ -65,7 +65,7 @@ const About2 = () => {
                                 />
                                 <span>+</span>
                             </div>
-                            <p className="text-muted-foreground">Pokojů, které už dýchají novou energi</p>
+                            <p className="text-muted-foreground">Pokojů, které už dýchají novou energii</p>
                         </div>
                     </div>
                 </div>
