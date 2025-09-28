@@ -90,15 +90,15 @@ const Hero210 = () => {
   }
   `;
     return (
-        <section>
+        <section className="flex flex-col items-center justify-center">
             <style>{css}</style>
             <div className="container">
                 <div className="mx-auto flex max-w-2xl flex-col items-center justify-center gap-8">
-                    <TextAnimate animation="blurInUp" by="character" as="h1" className="text-center font-calSans text-5xl lg:text-7xl font-bold" duration={0.6}>
+                    <TextAnimate animation="blurInUp" by="character" as="h1"  duration={0.6} className="sm:whitespace-nowrap">
                         Malíř pro všechny Vaše projekty
                     </TextAnimate>
                     <p className="text-center lg:text-lg">
-                        Vymaluji Váš byt, dům nebo kancelář v Brně a okolí.
+                        Vymaluji <span className="font-bold">Váš</span> <span className="font-bold">byt, dům</span> nebo <span className="font-bold">kancelář</span> v Brně a okolí.
                         Rychle, bez starostí a vždy se stoprocentním úklidem
                     </p>
                 </div>
@@ -149,7 +149,7 @@ const Hero210 = () => {
                 </div>
 
                 <div className="relative mx-auto mt-4 flex w-fit justify-center">
-                    <Button className="rounded-full px-4 py-2 active:scale-105">
+                    <Button className="rounded-full px-4 py-2 active:scale-105 bg-blue-400 hover:bg-blue-500">
                         Kontaktujte mě
                     </Button>
                 </div>

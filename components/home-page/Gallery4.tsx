@@ -21,48 +21,28 @@ export interface Gallery4Props {
 const data = [
     {
         id: "interior-painting",
-        title: "Interiérové malování: Nový život pro váš domov",
-        description:
-            "Profesionální malování interiérů s důrazem na čistotu, kvalitu a dlouhou životnost. Od běžného malování stěn až po moderní dekorativní stěrky a speciální povrchové úpravy.",
+        title: "Interiérové malování: Nový život pro Váš domov",
+        description: "Profesionální malování interiérů s důrazem na čistotu, kvalitu a dlouhou životnost.",
         href: "/sluzby/interier",
         image:
             "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
     },
     {
-        id: "exterior-painting",
-        title: "Exteriérové nátěry: Ochrana a styl fasád",
-        description:
-            "Kompletní nátěry a renovace fasád, které chrání váš dům před povětrnostními vlivy a zároveň mu dodají moderní vzhled.",
+        id: "float-painting",
+        title: "Dekorační stěrky: Luxusní povrchy pro Váš interiér",
+        description: "Luxusní dekorační stěrky promění Váš interiér v nadčasový prostor plný elegance, originality a moderního stylu.",
         href: "/sluzby/exterier",
         image:
             "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
     },
     {
-        id: "decorative-plaster",
-        title: "Dekorativní stěrky a benátský štuk",
+        id: "wallpapering",
+        title: "Tapetování: Styl a osobitost na Vašich stěnách",
         description:
-            "Luxusní povrchové úpravy stěn – betonové, mramorové nebo metalické efekty. Přeměňte svůj interiér v moderní a elegantní prostor.",
+            "Profesionální tapetování pro každý interiér – od klasických vzorů po moderní designy. Přidejte svému prostoru jedinečný charakter.",
         href: "/sluzby/dekorativni-sterky",
         image:
             "https://www.barvy-sanmarco.cz/wp-content/uploads/dekoracni-sterka-imitace-betonu-benatsky-stuk-marmorino-barvy-san-marco-brno08b.jpg",
-    },
-    {
-        id: "wood-metal",
-        title: "Nátěry dřeva a kovů",
-        description:
-            "Ošetření a ochrana dřevěných i kovových povrchů – ploty, zábradlí, dveře i okna. Estetika a dlouhá životnost v jednom.",
-        href: "/sluzby/drevo-kov",
-        image:
-            "https://images.unsplash.com/photo-1721395290083-895bf53d6178?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-        id: "renovations",
-        title: "Renovace a úklid po malování",
-        description:
-            "Kompletní servis včetně zakrývání, úklidu a renovace poškozených povrchů. Váš prostor vrátíme do perfektního stavu bez starostí.",
-        href: "/sluzby/renovace",
-        image:
-            "https://plus.unsplash.com/premium_photo-1676321688611-166945b4a041?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
 ];
 
@@ -94,11 +74,11 @@ const Gallery4 = ({
     }, [carouselApi]);
 
     return (
-        <section>
+        <section className="relative">
             <div className="container">
                 <div className="mb-8 flex items-end justify-between md:mb-14 lg:mb-16">
                     <div className="flex flex-col gap-4">
-                        <TextAnimate animation="blurInUp" by="character" as="h2" className="text-3xl font-medium md:text-4xl lg:text-5xl" duration={0.6}>
+                        <TextAnimate animation="blurInUp" by="character" as="h2" duration={0.6}>
                             {title}
                         </TextAnimate>
                         <p className="max-w-lg text-muted-foreground">{description}</p>

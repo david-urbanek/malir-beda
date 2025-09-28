@@ -17,9 +17,9 @@ import {
 } from "@/components/ui/popover";
 
 const NAV_LOGO = {
-    url: "https://www.shadcnblocks.com",
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcnblockscom-icon.svg",
-    alt: "logo",
+    url: "/",
+    src: "logo/malir-beda-logo.svg",
+    alt: "Malíř Béďa Logo",
     title: "Malíř Béďa",
 };
 const NAV_ITEMS = [
@@ -57,13 +57,10 @@ const Navbar17 = () => {
 
     return (
         <section className="py-4">
-            <nav className="container flex items-center justify-between">
+            <nav className="container flex items-center justify-between min-w-full">
                 {/* Left WordMark */}
                 <a href={NAV_LOGO.url} className="flex items-center gap-2">
-                    <img src={NAV_LOGO.src} className="max-h-8 w-8" alt={NAV_LOGO.alt} />
-                    <span className="text-lg font-semibold tracking-tighter">
-            {NAV_LOGO.title}
-          </span>
+                    <img src={NAV_LOGO.src} className="max-h-32 w-32" alt={NAV_LOGO.alt} />
                 </a>
 
                 <NavigationMenu className="hidden lg:block">

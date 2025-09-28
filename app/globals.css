@@ -114,6 +114,12 @@
   * {
     @apply border-border outline-ring/50;
   }
+  h1 {
+    @apply text-center text-3xl  md:text-5xl lg:text-6xl font-bold ;
+  }
+  h2 {
+    @apply text-2xl  md:text-4xl lg:text-5xl font-semibold;
+  }
   body {
     @apply bg-background text-foreground;
   }

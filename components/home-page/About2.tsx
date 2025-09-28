@@ -4,11 +4,12 @@ import React from "react";
 
 const About2 = () => {
     return (
-        <section>
-            <div className="flex flex-col gap-28">
+        <section className="relative overflow-hidden">
+            <img src="bg/bg-hero.svg" className="absolute -z-10 min-w-[100%] min-h-[100%] top-[0%] right-[0%]" />
+            <div className="flex flex-col gap-28 items-center justify-center">
                 <div className="container flex flex-col gap-10 text-center md:gap-24">
                     <div className="mx-auto flex max-w-3xl flex-col gap-6">
-                        <TextAnimate animation="blurInUp" by="character" as="h2" className="text-4xl font-medium md:text-5xl break-normal" duration={0.6}>
+                        <TextAnimate animation="blurInUp" by="character" as="h2" duration={0.6} >
                             Kdo jsem a proč mě zákazníci tak často doporučují
                         </TextAnimate>
                         <p className="text-lg text-muted-foreground md:text-xl">
@@ -36,7 +37,7 @@ const About2 = () => {
                     </div>
                 </div>
                 <div className="container flex flex-col gap-16">
-                    <h2 className="max-w-3xl text-4xl font-medium md:text-5xl">
+                    <h2>
                         Moje zkušenosti v číslech
                     </h2>
                     <div className="grid grid-cols-2 gap-6 md:grid-cols-3">

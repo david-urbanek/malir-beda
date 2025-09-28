@@ -56,11 +56,12 @@ const testimonials = [
 
 const Testimonial6 = () => {
     return (
-        <section>
+        <section className="relative">
+            <img src="bg/bg-testimonial.png" className="absolute -z-10 min-w-[100%] min-h-[100%] top-[15%] right-[0%]" />
             <div className="container">
                 <Carousel className="w-full">
                     <div className="mb-8 flex justify-between px-1 lg:mb-12">
-                        <TextAnimate animation="blurInUp" by="character" as="h2" className="text-2xl font-semibold lg:text-5xl" duration={0.6}>
+                        <TextAnimate animation="blurInUp" by="character" as="h2" duration={0.6}>
                             Reference mých klientů
                         </TextAnimate>
                         <div className="flex items-center space-x-2">
@@ -76,7 +77,7 @@ const Testimonial6 = () => {
                             >
                                 <div className="h-full p-1">
                                     <div className="flex h-full flex-col justify-between rounded-lg border p-6">
-                                        <q className="leading-7 text-foreground/70">
+                                        <q className="leading-7 text-gray-700">
                                             {testimonial.content}
                                         </q>
                                         <div className="mt-6 flex gap-4 leading-5">

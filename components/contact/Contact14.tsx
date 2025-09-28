@@ -7,7 +7,7 @@ import { Input } from "@/components/ui/input";
 
 const Contact14 = () => {
     return (
-        <section className="bg-background">
+        <section>
             <div className="container">
                 <Card className="rounded-4xl bg-muted w-full border-none">
                     <CardContent className="lg:px-18 relative overflow-hidden py-12 lg:py-24">
@@ -28,9 +28,9 @@ const Contact14 = () => {
                                         </Avatar>
                                     </div>
                                 </div>
-                                <h1 className="text-foreground text-5xl font-bold tracking-tighter">
+                                <h2 className="text-foreground text-5xl font-bold tracking-tighter">
                                     Ozvěte se mi!
-                                </h1>
+                                </h2>
 
                                 <ul className="max-w-lg space-y-2 tracking-tight">
                                     <li className="flex items-center">

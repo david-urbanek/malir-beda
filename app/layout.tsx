@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} antialiased container flex flex-col gap-16 mx-auto px-4 sm:px-6 lg:px-8`}
+        className={`${inter.className} antialiased container flex flex-col min-w-screen gap-16 mx-auto px-4 sm:px-6 lg:px-8`}
       >
       <header>
           <Navbar17 />
