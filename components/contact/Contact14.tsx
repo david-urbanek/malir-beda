@@ -1,9 +1,9 @@
 import React from "react";
 
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/components/avatar";
+import { Button } from "@/components/components/button";
+import { Card, CardContent } from "@/components/components/card";
+import { Input } from "@/components/components/input";
 
 const Contact14 = () => {
     return (

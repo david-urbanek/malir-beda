@@ -1,7 +1,7 @@
-import {Hero210} from "@/components/home-page/Hero210";
-import {About2} from "@/components/home-page/About2";
-import {Testimonial6} from "@/components/home-page/Testimonial6";
-import {Gallery4} from "@/components/home-page/Gallery4";
+import {Hero210} from "@/app/ui/home-page/Hero210";
+import { About2 } from "./ui/home-page/About2";
+import {Gallery4} from "@/app/ui/home-page/Gallery4";
+import {Testimonial6} from "@/app/ui/home-page/Testimonial6";
 
 
 export default function Home() {
