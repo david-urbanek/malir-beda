@@ -2,6 +2,7 @@
 
 import { Menu, X } from "lucide-react";
 import React, { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 
 import { Button } from "@/components/components/button";
 import {
@@ -18,7 +19,7 @@ import {
 
 const NAV_LOGO = {
     url: "/",
-    src: "logo/malir-beda-logo.svg",
+    src: "/logo/malir-beda-logo.svg",
     alt: "Malíř Béďa Logo",
     title: "Malíř Béďa",
 };
@@ -60,7 +61,7 @@ const Navbar17 = () => {
             <nav className="container flex items-center justify-between min-w-full">
                 {/* Left WordMark */}
                 <a href={NAV_LOGO.url} className="flex items-center gap-2">
-                    <img src={NAV_LOGO.src} className="max-h-32 w-32" alt={NAV_LOGO.alt} />
+                    <Image src={NAV_LOGO.src} className="max-h-32 w-32" alt={NAV_LOGO.alt} width="190" height="44" />
                 </a>
 
                 <NavigationMenu className="hidden lg:block">

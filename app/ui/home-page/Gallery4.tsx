@@ -28,23 +28,20 @@ const data = [
     {
         id: "float-painting",
         title: "Dekorační stěrky: Luxusní povrchy pro Váš interiér",
-        description: "Luxusní dekorační stěrky promění Váš interiér v nadčasový prostor plný elegance, originality a moderního stylu.",
-        href: "/sluzby/sterky",
+        description: "Luxusní dekorační stěrky promění Váš interiér v nadčasový prostor plný elegance, originality a moderního stylu. Vhodné pro moderní i klasické prostory, kde vynikne hra světla a textur.",        href: "/sluzby/sterky",
         image: greyPainting,
     },
     {
         id: "interior-painting",
-        title: "Interiové malování: Dejte nový živoat Vašim stěnám",
-        description: "Luxusní dekorační stěrky promění Váš interiér v nadčasový prostor plný elegance, originality a moderního stylu.",
-        href: "/sluzby/exterier",
+        title: "Interiové malování: Dejte nový život Vašim stěnám",
+        description: "Kvalitní interiérové malování s použitím barev Primalex, které zaručují dokonalý vzhled, čistotu a dlouhotrvající kvalitu každého nátěru. Ideální volba pro svěží a útulný domov.",        href: "/sluzby/interiove-malovani",
         image: interiorPainting,
     },
     {
         id: "wallpapering",
         title: "Tapetování: Styl a osobitost na Vašich stěnách",
-        description:
-            "Profesionální tapetování pro každý interiér – od klasických vzorů po moderní designy. Přidejte svému prostoru jedinečný charakter.",
-        href: "/sluzby/dekorativni-sterky",
+        description: "Precizní tapetování s důrazem na detail a čistý výsledek. Rád doporučím ověřené značky tapet, nebo použiji ty, které si sami vyberete – pro interiér s charakterem a elegancí.",
+        href: "/sluzby/tapety",
         image: greenWallpaper
     },
 ];
@@ -128,7 +125,7 @@ const Gallery4 = ({
                         {items.map((item) => (
                             <CarouselItem
                                 key={item.id}
-                                className="max-w-[320px] pl-[20px] lg:max-w-[360px]"
+                                className="max-w-[320px] pl-[20px] lg:max-w-[500px] lg:min-w-[400px]"
                             >
                                 <a href={item.href} className="group rounded-xl">
                                     <div className="group relative h-full min-h-[27rem] max-w-full overflow-hidden rounded-xl md:aspect-5/4 lg:aspect-16/9">

@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import {Inter} from "next/font/google";
 import "./globals.css";
-import {Navbar17} from "@/components/header/Navbar17";
-import {Contact14} from "@/components/contact/Contact14";
+import {Navbar17} from "./ui/header/Navbar17";
+import {Contact14} from "./ui/contact/Contact14";
 import {Footer6} from "@/components/footer/Footer6";
 
 const inter = Inter({
@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} antialiased container flex flex-col min-w-screen gap-16 mx-auto px-4 sm:px-6 lg:px-8`}
+        className={`${inter.className} antialiased container flex flex-col min-w-screen gap-8 mx-auto px-4 sm:px-6 lg:px-8`}
       >
       <header>
           <Navbar17 />

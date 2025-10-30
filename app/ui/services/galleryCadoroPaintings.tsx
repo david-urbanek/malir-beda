@@ -8,53 +8,35 @@ import {
     CarouselPrevious,
 } from "@/components/ui/carousel";
 
-import greyPainting from "@/app/ui/assets-edited/sterka-seda-edited.webp";
-import bluePainting from "@/app/ui/assets-edited/sterka-modra-edited.webp";
-import greyKitchenPainting from "@/app/ui/assets-edited/sterka-seda-kuchyn-edited.webp";
-import goldenPainting from "@/app/ui/assets-edited/sterka-zlata-edited.webp";
-import orangePainting from "@/app/ui/assets-edited/sterka-oranzova-edited.png";
-import greyTvPainting from "@/app/ui/assets-edited/sterka-seda-televize-edited.webp";
+import beigePainting from "@/app/ui/assets-edited/sterka-bezova-edited.webp";
+import bluePainting from "@/app/ui/assets-edited/sterka-zluta-edited.webp";
 import Image from "next/image";
 
 const images = [
     {
-        img: greyPainting,
+        img: beigePainting,
         alt: "Šedá dekorativní stěrka (Luxury)",
     },
     {
         img: bluePainting,
         alt: "Modrá dekorativní stěrka",
     },
-    {
-        img: greyKitchenPainting,
-        alt: "Šedá stěrka v kuchyňském interiéru",
-    },
-    {
-        img: goldenPainting,
-        alt: "Zlatá dekorativní stěrka – akcentní efekt",
-    },
-    {
-        img: orangePainting,
-        alt: "Oranžová stěrka jako výrazný akcent",
-    },
-    {
-        img: greyTvPainting,
-        alt: "Šedá stěrka za televizí v obývacím pokoji",
-    },
 ];
 
-const GalleryFloatPaintings = () => {
+const GalleryCaderoPaintings = () => {
     return (
-        <section className="py-32">
+        <section>
             <div className="container">
-                <h2 className="mb-4 text-4xl font-semibold">
-                    Nechte se inspirovat ukazkou mých realizací
+                <div className='max-w-3/4'>
+                    <h2 className="mb-4 font-semibold">
+                    Cadoro - Hladká stěrka bez písku
                 </h2>
-                <p className="text-muted-foreground text-sm">
-                    Každý prostor si zaslouží pečlivý přístup a cit pro detail.
-                    <br />
-                    Prohlédněte si ukázky mých realizací.
-                </p>
+                    <p className="text-muted-foreground">
+                        Hladká stěrka bez písku s jemným, hedvábným efektem. Působí elegantně a čistě,
+                        vytváří lehce sametový povrch, který odráží světlo s jemností a hloubkou. Skvělá volba pro ty,
+                        kdo preferují moderní a harmonický vzhled interiéru bez zbytečného lesku.
+                    </p>
+                </div>
                 <div className="mt-10">
                     <Carousel
                         opts={{
@@ -69,7 +51,7 @@ const GalleryFloatPaintings = () => {
                             }}
                         >
                             {images.map((image, index) => (
-                                <CarouselItem key={index} className="basis-1/2">
+                                <CarouselItem key={index} className="basis-1/2 max-h-150">
                                     <Image
                                         src={image.img}
                                         alt={image.alt}
@@ -87,4 +69,4 @@ const GalleryFloatPaintings = () => {
     );
 };
 
-export { GalleryFloatPaintings };
+export { GalleryCaderoPaintings };
