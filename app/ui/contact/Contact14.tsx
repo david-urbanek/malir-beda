@@ -11,9 +11,9 @@ const Contact14 = () => {
     return (
         <section>
             <div className="container">
-                <Card className="rounded-4xl bg-muted w-full border-none">
+                <Card className="rounded-4xl bg-gray-100/30 backdrop-blur-sm w-full border border-gray-200">
                     <CardContent className="lg:px-18 relative overflow-hidden py-12 lg:py-24">
-                        <div className="grid grid-cols-1 items-end gap-8 md:grid-cols-2">
+                        <div className='grid grid-cols-1 md:grid-cols-2 items-start gap-12'>
                             <div className="flex flex-col justify-center space-y-6">
                                 <p className="text-muted-foreground text-sm font-semibold tracking-tight">
                                     malirbeda.cz
@@ -47,7 +47,6 @@ const Contact14 = () => {
                                     </li>
                                 </ul>
                             </div>
-                            <Separator></Separator>
                             <ContactForm />
                         </div>
                     </CardContent>
