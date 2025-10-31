@@ -1,6 +1,7 @@
 'use server';
 
 import { z } from "zod";
+import {Resend} from "resend";
 
 const formSchema = z.object({
     name: z.string().min(1, "Zadejte své jméno."),
@@ -25,6 +26,8 @@ export type FormState = {
         message?: string
     }
 }
+
+const resend = new Resend(process.env.RESEND_API_KEY!);
 
 export async function handleFormSubmission(initialState: {message: string}, formData: FormData,): Promise<FormState> {
 
@@ -52,6 +55,13 @@ export async function handleFormSubmission(initialState: {message: string}, form
             errors: errors
         }
     }
+
+    resend.emails.send({
+        from: 'onboarding@resend.dev',
+        to: 'urbanek.dav@email.cz',
+        subject: 'Hello World',
+        html: '<p>Congrats on sending your <strong>Second email</strong>!</p>'
+    });
 
     return {
         message: 'Váše poptávka byla úspěšně odeslána. Brzy Vás budu kontaktovat.',

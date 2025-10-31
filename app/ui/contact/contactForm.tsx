@@ -20,6 +20,7 @@ import Form from "next/form"
 import { useActionState } from "react"
 import { handleFormSubmission } from "@/app/lib/actions"
 import {createPortal} from "react-dom";
+import {ViewTransition} from 'react';
 
 const initialState = {
     message: "",
@@ -68,6 +69,7 @@ export default function ContactForm() {
         <>
             {visible &&
                 createPortal(
+                    <ViewTransition>
                     <div className="fixed top-4 right-4 z-[9999]">
                         <Alert
                             variant={state.success ? "default" : "destructive"}
@@ -85,8 +87,8 @@ export default function ContactForm() {
                                 <AlertDescription>{state.message}</AlertDescription>
                             </div>
                         </Alert>
-                    </div>,
-                    document.body // ⬅️ Alert se vloží do <body>, mimo form
+                    </div>
+                    </ViewTransition>, document.body,
                 )}
 
             <Form action={formAction}>
