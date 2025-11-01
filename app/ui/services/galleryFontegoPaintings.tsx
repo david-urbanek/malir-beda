@@ -12,6 +12,7 @@ import greyFirePainting from "@/app/ui/assets-edited/sterka-krb-edited.webp";
 import greyKitchenPainting from "@/app/ui/assets-edited/sterka-seda-kuchyn-edited.webp";
 import greyTvPainting from "@/app/ui/assets-edited/sterka-seda-televize-edited.webp";
 import Image from "next/image";
+import {TextAnimate} from "@/components/magicui/text-animate";
 
 const images = [
     {
@@ -32,9 +33,10 @@ const GalleryFontegoPaintings = () => {
     return (
         <section>
             <div className="container">
-                <div className='max-w-3/4'><h2 className="mb-4 font-semibold">
+                <div className='max-w-3/4'>
+                    <TextAnimate animation="blurInUp" by="character" as="h2" duration={0.6} className='mb-4 font-semibold'>
                     Fontego - Stěrka s jemným pískovým efektem bez lesku
-                </h2>
+                    </TextAnimate>
                     <p className="text-muted-foreground">
                         Matná dekorativní stěrka bez lesku, která vyniká svou přirozeností a klidným vzhledem.
                         Vhodná pro minimalistické nebo rustikální interiéry, kde podtrhne strukturu stěn a dodá prostoru
@@ -47,7 +49,7 @@ const GalleryFontegoPaintings = () => {
                             align: "start",
                             loop: true,
                         }}
-                        className="mx-auto w-full max-w-6xl"
+                        className="mx-auto w-full"
                     >
                         <CarouselContent
                             style={{

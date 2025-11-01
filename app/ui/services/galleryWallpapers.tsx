@@ -16,6 +16,7 @@ import blueWallpaper from "@/app/ui/assets-edited/tapeta-modra-edited.webp";
 import leafWallpaper from "@/app/ui/assets-edited/tapeta-listy-edited.webp";
 
 import Image from "next/image";
+import {TextAnimate} from "@/components/magicui/text-animate";
 
 const images = [
     {
@@ -37,9 +38,9 @@ const GalleryWallpapers = () => {
         <section>
             <div className="container">
                 <div className='max-w-3/4'>
-                    <h1 className="mb-4 font-medium">
+                    <TextAnimate animation="blurInUp" by="character" as="h1" duration={0.6} className='mb-4 font-semibold'>
                     Tapetování
-                </h1>
+                    </TextAnimate>
                     <p className="text-muted-foreground">
                         Při tapetování pracuji pečlivě a s důrazem na detail, aby výsledek působil čistě a harmonicky.
                         Rád doporučím ověřené značky tapet s dlouhou životností a kvalitním povrchem.
@@ -51,7 +52,7 @@ const GalleryWallpapers = () => {
                             align: "start",
                             loop: true,
                         }}
-                        className="mx-auto w-full max-w-6xl"
+                        className="mx-auto w-full"
                     >
                         <CarouselContent
                             style={{

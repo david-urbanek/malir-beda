@@ -1,15 +1,11 @@
 "use client";
 
-import { ArrowLeft, ArrowRight } from "lucide-react";
-import React, { useEffect, useState } from "react";
+import {ArrowLeft, ArrowRight} from "lucide-react";
+import React, {useEffect, useState} from "react";
 
-import { Button } from "@/components/components/button";
-import type { CarouselApi } from "@/components/components/carousel";
-import {
-    Carousel,
-    CarouselContent,
-    CarouselItem,
-} from "@/components/components/carousel";
+import {Button} from "@/components/components/button";
+import type {CarouselApi} from "@/components/components/carousel";
+import {Carousel, CarouselContent, CarouselItem,} from "@/components/components/carousel";
 import {TextAnimate} from "@/components/magicui/text-animate";
 
 
@@ -28,13 +24,15 @@ const data = [
     {
         id: "float-painting",
         title: "Dekorační stěrky: Luxusní povrchy pro Váš interiér",
-        description: "Luxusní dekorační stěrky promění Váš interiér v nadčasový prostor plný elegance, originality a moderního stylu. Vhodné pro moderní i klasické prostory, kde vynikne hra světla a textur.",        href: "/sluzby/sterky",
+        description: "Luxusní dekorační stěrky promění Váš interiér v nadčasový prostor plný elegance, originality a moderního stylu. Vhodné pro moderní i klasické prostory, kde vynikne hra světla a textur.",
+        href: "/sluzby/sterky",
         image: greyPainting,
     },
     {
         id: "interior-painting",
         title: "Interiové malování: Dejte nový život Vašim stěnám",
-        description: "Kvalitní interiérové malování s použitím barev Primalex, které zaručují dokonalý vzhled, čistotu a dlouhotrvající kvalitu každého nátěru. Ideální volba pro svěží a útulný domov.",        href: "/sluzby/interiove-malovani",
+        description: "Kvalitní interiérové malování s použitím barev Primalex, které zaručují dokonalý vzhled, čistotu a dlouhotrvající kvalitu každého nátěru. Ideální volba pro svěží a útulný domov.",
+        href: "/sluzby/interiove-malovani",
         image: interiorPainting,
     },
     {
@@ -75,7 +73,7 @@ const Gallery4 = ({
     }, [carouselApi]);
 
     return (
-        <section className="relative flex w-full flex-col items-center justify-center">
+        <section className="relative flex w-full flex-col items-center justify-center" id='services'>
             <div className="container">
                 <div className="mb-8 flex items-end justify-between md:mb-14 lg:mb-16">
                     <div className="flex flex-col gap-4">
@@ -94,7 +92,7 @@ const Gallery4 = ({
                             disabled={!canScrollPrev}
                             className="disabled:pointer-events-auto"
                         >
-                            <ArrowLeft className="size-5" />
+                            <ArrowLeft className="size-5"/>
                         </Button>
                         <Button
                             size="icon"
@@ -105,7 +103,7 @@ const Gallery4 = ({
                             disabled={!canScrollNext}
                             className="disabled:pointer-events-auto"
                         >
-                            <ArrowRight className="size-5" />
+                            <ArrowRight className="size-5"/>
                         </Button>
                     </div>
                 </div>
@@ -121,21 +119,25 @@ const Gallery4 = ({
                         },
                     }}
                 >
-                    <CarouselContent className="ml-0 2xl:mr-[max(0rem,calc(50vw-700px))] 2xl:ml-[max(8rem,calc(50vw-700px))]">
+                    <CarouselContent
+                        className="ml-0 2xl:mr-[max(0rem,calc(50vw-700px))] 2xl:ml-[max(8rem,calc(50vw-700px))]">
                         {items.map((item) => (
                             <CarouselItem
                                 key={item.id}
                                 className="max-w-[320px] pl-[20px] lg:max-w-[500px] lg:min-w-[400px]"
                             >
                                 <a href={item.href} className="group rounded-xl">
-                                    <div className="group relative h-full min-h-[27rem] max-w-full overflow-hidden rounded-xl md:aspect-5/4 lg:aspect-16/9">
+                                    <div
+                                        className="group relative h-full min-h-[27rem] max-w-full overflow-hidden rounded-xl md:aspect-5/4 lg:aspect-16/9">
                                         <Image
                                             src={item.image}
                                             alt={item.title}
                                             className="absolute h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
                                         />
-                                        <div className="absolute inset-0 h-full bg-[linear-gradient(transparent_20%,var(--primary)_100%)] mix-blend-multiply" />
-                                        <div className="absolute inset-x-0 bottom-0 flex flex-col items-start p-6 text-primary-foreground md:p-8">
+                                        <div
+                                            className="absolute inset-0 h-full bg-[linear-gradient(transparent_20%,var(--primary)_100%)] mix-blend-multiply"/>
+                                        <div
+                                            className="absolute inset-x-0 bottom-0 flex flex-col items-start p-6 text-primary-foreground md:p-8">
                                             <div className="mb-2 pt-4 text-xl font-semibold md:mb-3 md:pt-4 lg:pt-4">
                                                 {item.title}
                                             </div>
@@ -144,7 +146,8 @@ const Gallery4 = ({
                                             </div>
                                             <div className="flex items-center text-sm">
                                                 Zjistit více{" "}
-                                                <ArrowRight className="ml-2 size-5 transition-transform group-hover:translate-x-1" />
+                                                <ArrowRight
+                                                    className="ml-2 size-5 transition-transform group-hover:translate-x-1"/>
                                             </div>
                                         </div>
                                     </div>
@@ -170,4 +173,4 @@ const Gallery4 = ({
     );
 };
 
-export { Gallery4 };
+export {Gallery4};

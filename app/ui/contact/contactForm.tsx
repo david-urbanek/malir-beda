@@ -20,7 +20,6 @@ import Form from "next/form"
 import { useActionState } from "react"
 import { handleFormSubmission } from "@/app/lib/actions"
 import {createPortal} from "react-dom";
-import {ViewTransition} from 'react';
 
 const initialState = {
     message: "",
@@ -46,18 +45,19 @@ export default function ContactForm() {
     // zobrazí alert a případně resetuje formulář
     useEffect(() => {
         if (state.message) {
-
-            if (state.success) {
-                setFormData(initialValues)
-                console.log(formData)
-            }
-
             setVisible(true)
             const timer = setTimeout(() => setVisible(false), 10000)
             return () => clearTimeout(timer)
         }
 
     }, [state])
+
+    useEffect(() => {
+        if (state.success) {
+            setFormData(initialValues)
+            console.log(formData)
+        }
+    }, [state.success])
 
     // ovládání polí (zachovává hodnoty)
     function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) {
@@ -67,38 +67,32 @@ export default function ContactForm() {
 
     return (
         <>
-            {visible &&
-                createPortal(
-                    <ViewTransition>
-                    <div className="fixed top-4 right-4 z-[9999]">
-                        <Alert
-                            variant={state.success ? "default" : "destructive"}
-                            className="shadow-lg w-72"
-                        >
-                            {state.success ? (
-                                <CheckCircle className="h-4 w-4 text-green-600" />
-                            ) : (
-                                <AlertCircle className="h-4 w-4 text-red-600" />
-                            )}
-                            <div>
-                                <AlertTitle>
-                                    {state.success ? "Odesláno ✅" : "Chyba"}
-                                </AlertTitle>
-                                <AlertDescription>{state.message}</AlertDescription>
-                            </div>
-                        </Alert>
-                    </div>
-                    </ViewTransition>, document.body,
-                )}
+                {visible &&
+                    createPortal(
+                        <div className="fixed top-4 right-4 z-[9999]">
+                            <Alert
+                                variant={state.success ? "default" : "destructive"}
+                                className="shadow-lg w-72"
+                            >
+                                {state.success ? (
+                                    <CheckCircle className="h-4 w-4 text-green-600" />
+                                ) : (
+                                    <AlertCircle className="h-4 w-4 text-red-600" />
+                                )}
+                                <div>
+                                    <AlertTitle>
+                                        {state.success ? "Odesláno ✅" : "Chyba"}
+                                    </AlertTitle>
+                                    <AlertDescription>{state.message}</AlertDescription>
+                                </div>
+                            </Alert>
+                        </div>
+                        , document.body,
+                    )}
 
             <Form action={formAction}>
-                <FieldSet className="min-w-1/2">
+                <FieldSet className="min-w-1/2 max-w-100">
                     {/* --- Kontaktní údaje --- */}
-                    <div className="flex flex-col gap-0">
-                        <FieldLegend>Kontaktní údaje:</FieldLegend>
-                        <FieldDescription>Zadejte své kontaktní údaje</FieldDescription>
-                    </div>
-
                     <FieldGroup>
                         <div className="flex gap-4">
                             <div>
@@ -215,7 +209,7 @@ export default function ContactForm() {
                         {state.errors?.message && <FieldError>{state.errors.message}</FieldError>}
 
                         {/* --- Tlačítko --- */}
-                        <Button disabled={pending}>
+                        <Button disabled={pending} className='bg-blue-400 hover:bg-blue-500'>
                             {pending ? "Odesílání..." : "Odeslat nezávaznou poptávku"}
                         </Button>
                     </FieldGroup>

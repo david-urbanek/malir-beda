@@ -9,18 +9,24 @@ import orangePainting from '@/app/ui/home-page/assets/sterka-oranzova.png'
 
 const About2 = () => {
     return (
-        <section className="relative overflow-hidden">
-            <img src="bg/bg-hero.svg" className="absolute -z-10 min-w-[100%] min-h-[100%] top-[0%] right-[0%]" />
+        <section className="relative overflow-hidden" id='about'>
+            <Image src="bg/bg-hero.svg" className="absolute -z-10 min-w-[100%] min-h-[100%] top-[0%] right-[0%]"
+                   alt='Logo firmy Malíř Béďa' width={1772} height={1718}/>
             <div className="flex flex-col gap-28 items-center justify-center">
                 <div className="flex flex-col gap-10 text-center md:gap-24 ">
                     <div className="mx-auto flex max-w-4xl flex-col items-center gap-6">
-                        <TextAnimate animation="blurInUp" by="character" as="h2" duration={0.6} className='max-w-3xl' >
+                        <TextAnimate animation="blurInUp" by="character" as="h2" duration={0.6} className='max-w-3xl'>
                             Kdo jsem a proč mě zákazníci tak často doporučují
                         </TextAnimate>
                         <p className="text-lg text-muted-foreground md:text-xl">
-                            Především si zakládám na <span className="font-semibold text-black">čistotě</span> po práci a férovém vztahu se zákazníkem.
-                            Zaměřuji se na <span className="font-semibold text-black">dekorativní stěrky</span>, které dodají interiéru osobitý styl.
-                            Používám osvědčené značky <span className="font-semibold text-black">San Marco</span> a <span className="font-semibold text-black">Primalex</span>, se kterými mám letité zkušenosti a které
+                            Především si zakládám na <span className="font-semibold text-black">čistotě</span> po práci
+                            a férovém vztahu se zákazníkem.
+                            Zaměřuji se na <span className="font-semibold text-black">dekorativní stěrky</span>, které
+                            dodají interiéru osobitý styl.
+                            Používám osvědčené značky jako například <span
+                            className="font-semibold text-black">San Marco</span> na stěrky a <span
+                            className="font-semibold text-black">Primalex</span> na interierové malby. S těmito značkami mám letité zkušenosti a
+                            vím, že
                             zaručují špičkovou kvalitu i dlouhou životnost výsledku.
                         </p>
                     </div>
@@ -50,8 +56,8 @@ const About2 = () => {
                         <div className="flex flex-col gap-6 border-b pb-8">
                             <div className="text-4xl font-medium md:text-5xl flex gap-1">
                                 <NumberTicker
-                                value={60}
-                            />
+                                    value={60}
+                                />
                                 <span>+</span>
                             </div>
                             <p className="text-muted-foreground">Spokojených zákazníků</p>
@@ -81,4 +87,4 @@ const About2 = () => {
     );
 };
 
-export { About2 };
+export {About2};

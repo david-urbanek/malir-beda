@@ -20,6 +20,7 @@ import whiteRoomPainting from "@/app/ui/assets-edited/malba-bila-pokoj-edited.we
 import greyRoomPainting from "@/app/ui/assets-edited/malba-seda-edited.webp";
 
 import Image from "next/image";
+import {TextAnimate} from "@/components/magicui/text-animate";
 
 const images = [
     {
@@ -41,9 +42,9 @@ const GalleryWallpapers = () => {
         <section>
             <div className="container">
                 <div className='max-w-3/4'>
-                    <h1 className="mb-4 font-medium">
+                    <TextAnimate animation="blurInUp" by="character" as="h1" duration={0.6} className='mb-4 font-semibold'>
                     Interiové malování
-                </h1>
+                    </TextAnimate>
                     <p className="text-muted-foreground">
                         Používáme osvědčené barvy Primalex, které zaručují dokonalý vzhled a dlouhotrvající kvalitu
                         každého interiéru. Díky široké paletě odstínů a preciznímu zpracování dosahujeme hladkého,
@@ -59,7 +60,7 @@ const GalleryWallpapers = () => {
                             align: "start",
                             loop: true,
                         }}
-                        className="mx-auto w-full max-w-6xl"
+                        className="mx-auto w-full"
                     >
                         <CarouselContent
                             style={{

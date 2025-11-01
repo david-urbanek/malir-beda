@@ -1,15 +1,13 @@
 import React from "react";
 
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/components/avatar";
-import { Button } from "@/components/components/button";
+
 import { Card, CardContent } from "@/components/components/card";
-import { Input } from "@/components/components/input";
 import ContactForm from "@/app/ui/contact/contactForm";
-import {Separator} from "@/components/ui/separator";
+
 
 const Contact14 = () => {
     return (
-        <section>
+        <section className="flex flex-col items-center justify-center w-full">
             <div className="container">
                 <Card className="rounded-4xl bg-gray-100/30 backdrop-blur-sm w-full border border-gray-200">
                     <CardContent className="lg:px-18 relative overflow-hidden py-12 lg:py-24">
@@ -18,9 +16,12 @@ const Contact14 = () => {
                                 <p className="text-muted-foreground text-sm font-semibold tracking-tight">
                                     malirbeda.cz
                                 </p>
-                                <h2 className="text-foreground text-5xl font-bold tracking-tighter">
+                                <div className='flex flex-col gap-2'>
+                                    <h2 className="text-foreground text-5xl font-bold tracking-tighter">
                                     Ozvěte se mi!
                                 </h2>
+                                    <p className='text-foreground/80'>přijímam poptávky už od 4m2</p>
+                                </div>
 
                                 <ul className="max-w-lg space-y-2 tracking-tight">
                                         <li className="flex items-center">

@@ -1,16 +1,16 @@
 "use client";
 
-import { motion } from "framer-motion";
-import React, { useEffect, useState } from "react";
-import { Autoplay, EffectCoverflow } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
+import {motion} from "framer-motion";
+import React, {useEffect, useState} from "react";
+import {Autoplay, EffectCoverflow} from "swiper/modules";
+import {Swiper, SwiperSlide} from "swiper/react";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css";
 import "swiper/css/effect-cards";
 
-import { Button } from "@/components/components/button";
+import {Button} from "@/components/components/button";
 import {TextAnimate} from "@/components/magicui/text-animate";
 
 import orangePainting from '@/app/ui/home-page/assets/sterka-oranzova.png'
@@ -21,6 +21,7 @@ import greyKitchenPainting from '@/app/ui/home-page/assets/sterka-kuchyne-seda.j
 import bluePainting from '@/app/ui/home-page/assets/sterka-modra.jpg'
 
 import Image from "next/image";
+import Link from "next/link";
 
 const Hero210 = () => {
     const [domLoaded, setDomLoaded] = useState(false);
@@ -87,24 +88,29 @@ const Hero210 = () => {
             <style>{css}</style>
             <div className="container">
                 <div className="mx-auto flex max-w-2xl flex-col items-center justify-center gap-8">
-                    <TextAnimate animation="blurInUp" by="character" as="h1"  duration={0.6} className="sm:whitespace-nowrap">
+                    <TextAnimate animation="blurInUp" by="character" as="h1" duration={0.6}
+                                 className="sm:whitespace-nowrap">
                         Malíř pro všechny Vaše projekty
                     </TextAnimate>
                     <p className="text-center lg:text-lg">
-                        Vymaluji <span className="font-bold">Váš</span> <span className="font-bold">byt, dům</span> nebo <span className="font-bold">kancelář</span> v Brně a okolí.
-                        Rychle, bez starostí a vždy se <span className="font-bold">stoprocentním úklidem</span>
+                        Vymaluji <span className="font-bold">Váš</span> <span
+                        className="font-bold">byt, dům</span> nebo <span className="font-bold">kancelář</span> v Brně a
+                        okolí.
+                        Rychle, a bez <span className="font-bold">starostí.</span>
                     </p>
                 </div>
 
                 <div className="relative mt-12 h-[420px] w-full lg:px-20">
-                    <div className="lg:110 absolute left-0 z-10 h-full w-12 bg-gradient-to-r from-background via-white to-transparent md:w-58 lg:left-16" />
-                    <div className="absolute right-0 z-10 h-full w-12 bg-gradient-to-l from-background via-white to-transparent md:w-58 lg:right-16" />
+                    <div
+                        className="lg:110 absolute left-0 z-10 h-full w-12 bg-gradient-to-r from-background via-white to-transparent md:w-58 lg:left-16"/>
+                    <div
+                        className="absolute right-0 z-10 h-full w-12 bg-gradient-to-l from-background via-white to-transparent md:w-58 lg:right-16"/>
 
                     {domLoaded && (
                         <motion.div
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{ duration: 0.3 }}
+                            initial={{opacity: 0}}
+                            animate={{opacity: 1}}
+                            transition={{duration: 0.3}}
                             className="w-full"
                         >
                             <Swiper
@@ -142,8 +148,10 @@ const Hero210 = () => {
                 </div>
 
                 <div className="relative mx-auto mt-4 flex w-fit justify-center">
-                    <Button className="rounded-full px-4 py-2 active:scale-105 bg-blue-400 hover:bg-blue-500">
-                        Kontaktujte mě
+                    <Button className="px-4 py-2 active:scale-105 bg-blue-400 hover:bg-blue-500">
+                        <Link href="/kontakt">
+                            Kontaktujte mě
+                        </Link>
                     </Button>
                 </div>
             </div>
@@ -151,4 +159,4 @@ const Hero210 = () => {
     );
 };
 
-export { Hero210 };
+export {Hero210};

@@ -11,6 +11,7 @@ import {
 import beigePainting from "@/app/ui/assets-edited/sterka-bezova-edited.webp";
 import bluePainting from "@/app/ui/assets-edited/sterka-zluta-edited.webp";
 import Image from "next/image";
+import {TextAnimate} from "@/components/magicui/text-animate";
 
 const images = [
     {
@@ -28,9 +29,9 @@ const GalleryCaderoPaintings = () => {
         <section>
             <div className="container">
                 <div className='max-w-3/4'>
-                    <h2 className="mb-4 font-semibold">
+                    <TextAnimate animation="blurInUp" by="character" as="h2" duration={0.6} className='mb-4 font-semibold'>
                     Cadoro - Hladká stěrka bez písku
-                </h2>
+                    </TextAnimate>
                     <p className="text-muted-foreground">
                         Hladká stěrka bez písku s jemným, hedvábným efektem. Působí elegantně a čistě,
                         vytváří lehce sametový povrch, který odráží světlo s jemností a hloubkou. Skvělá volba pro ty,
@@ -43,7 +44,7 @@ const GalleryCaderoPaintings = () => {
                             align: "start",
                             loop: true,
                         }}
-                        className="mx-auto w-full max-w-6xl"
+                        className="mx-auto w-full"
                     >
                         <CarouselContent
                             style={{

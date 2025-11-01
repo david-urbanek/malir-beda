@@ -16,6 +16,7 @@ import orangePainting from "@/app/ui/assets-edited/sterka-oranzova-edited.png";
 import greyTvPainting from "@/app/ui/assets-edited/sterka-seda-televize-edited.webp";
 import greenPainting from "@/app/ui/assets-edited/sterka-tyrkysova-edited.webp";
 import Image from "next/image";
+import {TextAnimate} from "@/components/magicui/text-animate";
 
 const images = [
     {
@@ -41,22 +42,23 @@ const GalleryLuxuryPaintings = () => {
         <section>
             <div className="container">
                 <div className='max-w-3/4'>
-                    <h2 className="mb-4 font-semibold">
+                        <TextAnimate animation="blurInUp" by="character" as="h2" duration={0.6} className='mb-4 font-semibold'>
                     Luxury - Stěrka s jemným leskem
-                </h2>
+                            </TextAnimate>
+
                     <p className="text-muted-foreground">
                         Ideální pro moderní
                         interiéry, kde vynikne hra světla a odlesků. Povrch působí exkluzivně a přesto decentně – perfektní volba
                         pro ty, kteří chtějí dodat prostoru styl a originalitu.
                     </p>
                 </div>
-                <div className="mt-10">
+                <div className="mt-10 w-full">
                     <Carousel
                         opts={{
                             align: "start",
                             loop: true,
                         }}
-                        className="mx-auto w-full max-w-6xl"
+                        className="mx-auto w-full"
                     >
                         <CarouselContent
                             style={{

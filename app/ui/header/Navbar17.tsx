@@ -16,6 +16,7 @@ import {
     PopoverContent,
     PopoverTrigger,
 } from "@/components/components/popover";
+import Link from "next/link";
 
 const NAV_LOGO = {
     url: "/",
@@ -24,10 +25,9 @@ const NAV_LOGO = {
     title: "Malíř Béďa",
 };
 const NAV_ITEMS = [
-    { name: "Home", link: "#" },
-    { name: "About", link: "#" },
-    { name: "Pricing", link: "#" },
-    { name: "Contact", link: "#" },
+    { name: "Služby", link: "/#services" },
+    { name: "O mně", link: "/#about" },
+    { name: "Kontakt", link: "/kontakt" },
 ];
 
 const Navbar17 = () => {
@@ -72,17 +72,20 @@ const Navbar17 = () => {
                         {NAV_ITEMS.map((item) => (
                             <React.Fragment key={item.name}>
                                 <NavigationMenuItem>
-                                    <NavigationMenuLink
-                                        data-nav-item={item.name}
-                                        onClick={() => setActiveItem(item.name)}
-                                        className={`relative cursor-pointer text-sm font-medium hover:bg-transparent ${
-                                            activeItem === item.name
-                                                ? "text-foreground"
-                                                : "text-muted-foreground"
-                                        }`}
-                                    >
-                                        {item.name}
-                                    </NavigationMenuLink>
+                                        <NavigationMenuLink
+                                            asChild
+                                            data-nav-item={item.name}
+                                            onClick={() => setActiveItem(item.name)}
+                                            className={`relative cursor-pointer text-sm font-medium hover:bg-transparent ${
+                                                activeItem === item.name
+                                                    ? "text-foreground"
+                                                    : "text-muted-foreground"
+                                            }`}
+                                        >
+                                            <Link href={item.link}>
+                                                {item.name}
+                                            </Link>
+                                        </NavigationMenuLink>
                                 </NavigationMenuItem>
                             </React.Fragment>
                         ))}
@@ -105,7 +108,9 @@ const Navbar17 = () => {
                         size="sm"
                         className="h-10 py-2.5 text-sm font-normal"
                     >
-                        Kontaktujte mě
+                        <Link href='/kontakt'>
+                            Kontaktujte mě
+                        </Link>
                     </Button>
                 </div>
             </nav>
@@ -159,7 +164,7 @@ const MobileNav = ({
                     <ul className="bg-background text-foreground w-full py-4">
                         {NAV_ITEMS.map((navItem, idx) => (
                             <li key={idx}>
-                                <a
+                                <Link
                                     href={navItem.link}
                                     onClick={() => setActiveItem(navItem.name)}
                                     className={`text-foreground flex items-center border-l-[3px] px-6 py-4 text-sm font-medium transition-all duration-75 ${
@@ -169,7 +174,7 @@ const MobileNav = ({
                                     }`}
                                 >
                                     {navItem.name}
-                                </a>
+                                </Link>
                             </li>
                         ))}
                         <li className="flex flex-col px-7 py-2">
