@@ -101,7 +101,7 @@ export default function NotificationEmail() {
                             <Img
                                 alt="Logo firmy Malíř Béďa"
                                 className="bject-cover"
-                                height={16}
+                                height={32}
                                 src="https://www.malirbeda.cz/logo/malir-beda-logo.png"
                             />
                         </Row>
