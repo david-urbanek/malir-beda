@@ -178,7 +178,9 @@ const MobileNav = ({
                             </li>
                         ))}
                         <li className="flex flex-col px-7 py-2">
-                            <Button variant="outline">Sign Up</Button>
+                            <Link href='/kontakt'>
+                                <Button variant="outline">Kontaktujte mě</Button>
+                            </Link>
                         </li>
                     </ul>
                 </PopoverContent>

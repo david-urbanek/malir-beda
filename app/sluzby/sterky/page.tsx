@@ -1,5 +1,4 @@
 import {GalleryLuxuryPaintings} from "@/app/ui/services/galleryLuxuryPaintings";
-import Image from "next/image";
 
 import orangePainting from "@/app/ui/assets-edited/sterka-oranzova-edited.png";
 import greyKitchenPainting from '@/app/ui/assets-edited/sterka-seda-kuchyn-edited.webp'
@@ -39,8 +38,10 @@ export default function Page() {
             <div className="flex flex-col w-full gap-4 container">
                 <h1 className='font-semibold'>Dekorační stěrky</h1>
                 <p className="text-muted-foreground">
-                    Nabízím široký výběr dekorativních stěrek značky San Marco, které se vyznačují kvalitou, odolností a elegantním vzhledem.
-                    Každá realizace je výsledkem poctivé práce, pečlivé přípravy a smyslu pro detail – od moderních interiérů až po útulné domovy.
+                    Nabízím široký výběr dekorativních stěrek značky San Marco, které se vyznačují kvalitou, odolností a
+                    elegantním vzhledem.
+                    Každá realizace je výsledkem poctivé práce, pečlivé přípravy a smyslu pro detail – od moderních
+                    interiérů až po útulné domovy.
                 </p>
             </div>
             <GalleryLuxuryPaintings></GalleryLuxuryPaintings>

@@ -405,6 +405,7 @@ const TextAnimateBase = ({
               segmentClassName,
             )}
             aria-hidden={accessible ? true : undefined}
+            tabIndex={accessible ? -1 : undefined}
           >
             {segment}
           </motion.span>
