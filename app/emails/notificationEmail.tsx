@@ -99,10 +99,10 @@ export default function NotificationEmail() {
                     <Section>
                         <Row className='max-w-32 max-h-16 mt-[16px]'>
                             <Img
-                                alt="Clyde Electric Kettle"
+                                alt="Logo firmy Malíř Béďa"
                                 className="w-full object-cover"
                                 height={288}
-                                src="http://localhost:3000/logo/malir-beda-logo.svg"
+                                src="https://www.malirbeda.cz/logo/malir-beda-logo.png"
                             />
                         </Row>
                     </Section>
