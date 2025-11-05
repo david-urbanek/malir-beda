@@ -47,7 +47,7 @@ export default function NotificationEmail() {
                                         alt="Stagg Electric Kettle"
                                         className="w-full rounded-[12px] object-cover"
                                         height={288}
-                                        src="https://malir-beda.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fsterka-bezova-edited.34b77b5a.webp&w=2048&q=75"
+                                        src="https://www.malirbeda.cz/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fsterka-bezova-edited.34b77b5a.webp&w=2048&q=75"
                                     />
                                 </Link>
                             </Column>
@@ -58,7 +58,7 @@ export default function NotificationEmail() {
                                         className="w-full rounded-[12px] object-cover"
                                         width={288}
                                         height={288}
-                                        src="https://malir-beda.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fsterka-oranzova-edited.f21d5003.png&w=3840&q=75"
+                                        src="https://www.malirbeda.cz/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fsterka-oranzova-edited.f21d5003.png&w=3840&q=75"
                                     />
                                 </Link>
                             </Column>
@@ -70,7 +70,7 @@ export default function NotificationEmail() {
                                         alt="Atmos Vacuum Canister"
                                         className="w-full rounded-[12px] object-cover"
                                         height={288}
-                                        src="https://malir-beda.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fsterka-seda-televize-edited.50a30419.webp&w=2048&q=75"
+                                        src="https://www.malirbeda.cz/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fsterka-seda-televize-edited.50a30419.webp&w=2048&q=75"
                                     />
                                 </Link>
                             </Column>
@@ -80,7 +80,7 @@ export default function NotificationEmail() {
                                         alt="Clyde Electric Kettle"
                                         className="w-full rounded-[12px] object-cover"
                                         height={288}
-                                        src="https://malir-beda.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fsterka-seda-kuchyn-edited.1f5d5d37.webp&w=2048&q=75"
+                                        src="https://www.malirbeda.cz/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ffontego-medenna.54b61643.webp&w=2048&q=75"
                                     />
                                 </Link>
                             </Column>
