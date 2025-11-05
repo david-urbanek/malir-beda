@@ -22,15 +22,15 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en">
+        <html lang="cs">
         <body
             className={`${inter.className} antialiased container flex flex-col min-w-screen gap-8 mx-auto px-4 sm:px-6 lg:px-8`}
         >
         <header>
             <Navbar17/>
         </header>
-        <main>{children}</main>
-        <footer>
+        <main role="main">{children}</main>
+        <footer role="contentinfo">
             <Contact14/>
             <Footer6/>
         </footer>

@@ -58,7 +58,7 @@ const Navbar17 = () => {
 
     return (
         <section className="py-4">
-            <nav className="container flex items-center justify-between min-w-full">
+            <nav className="container flex items-center justify-between min-w-full" role="navigation">
                 {/* Left WordMark */}
                 <a href={NAV_LOGO.url} className="flex items-center gap-2">
                     <Image src={NAV_LOGO.src} className="max-h-32 w-32" alt={NAV_LOGO.alt} width="190" height="44" />
