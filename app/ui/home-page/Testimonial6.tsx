@@ -9,54 +9,54 @@ import {
 import {TextAnimate} from "@/components/magicui/text-animate";
 import React from "react";
 import Image from "next/image";
-import greenAvatar from '@/app/ui/home-page/assets/Size=100, Color=Green, State=Focus, Type=Gradient Avatar.svg'
-import lightAvatar from '@/app/ui/home-page/assets/Size=100, Color=Light, State=Hover, Type=Gradient Avatar.svg'
-import orangeAvatar from '@/app/ui/home-page/assets/Size=100, Color=Orange, State=Focus, Type=Gradient Avatar.svg'
-import purpleAvatar from '@/app/ui/home-page/assets/Size=100, Color=Purple, State=Default, Type=Gradient Avatar.svg'
-import redAvatar from '@/app/ui/home-page/assets/Size=100, Color=Red, State=Focus, Type=Gradient Avatar.svg'
-import yellowAvatar from '@/app/ui/home-page/assets/Size=100, Color=Yellow, State=Focus, Type=Gradient Avatar.svg'
+import avatar from '@/app/ui/home-page/assets/Avatar.png'
+import avatarOne from '@/app/ui/home-page/assets/Avatar-1.png'
+import avatarTwo from '@/app/ui/home-page/assets/Avatar-2.png'
+import avatarThree from '@/app/ui/home-page/assets/Avatar-3.png'
+import avatarFour from '@/app/ui/home-page/assets/Avatar-4.png'
+import avatarFive from '@/app/ui/home-page/assets/Avatar-5.png'
 
 
 const testimonials = [
     {
         name: "Petr Novák",
         role: "Majitel rodinného domu",
-        avatar: greenAvatar,
+        avatar: avatar,
         content:
             "Béďa a jeho tým nám dělali dekorativní stěrky v obýváku i ložnici. Výsledek je perfektní – moderní, čistý a přesně podle domluvy. Oceňuji hlavně spolehlivost a férové jednání.",
     },
     {
         name: "Jana Svobodová",
         role: "Bytová architektka",
-        avatar: lightAvatar,
+        avatar: avatarOne,
         content:
             "S Béďou spolupracuji pravidelně na projektech pro své klienty. Jeho dekorativní stěrky působí luxusně, detaily jsou precizní a komunikace naprosto profesionální. Spokojenost na obou stranách.",
     },
     {
         name: "Martin Dvořák",
         role: "Podnikatel",
-        avatar: orangeAvatar,
+        avatar: avatarTwo,
         content:
             "Béďův tým dělal dekorativní stěrky v naší firmě a výsledek předčil očekávání. Kanceláře teď působí reprezentativně, práce byla rychlá a bez zbytečných průtahů. Skvělá domluva od začátku do konce.",
     },
     {
         name: "Eva Novotná",
         role: "Majitelka bytu",
-        avatar: purpleAvatar,
+        avatar: avatarThree,
         content:
             "Pan Béďa mi dělal dekorativní stěrky v obýváku a jsem z výsledku nadšená! Povrch je nádherný, domluva byla rychlá a přístup naprosto profesionální. Můžu jen doporučit.",
     },
     {
         name: "Richard Horák",
         role: "Správce budovy",
-        avatar: redAvatar,
+        avatar: avatarFour,
         content:
             "Béďa s kolegy natíral společné prostory a realizoval dekorativní stěrky na chodbách. Oceňuji jejich preciznost, čistotu práce a férový přístup. Výsledek působí reprezentativně a vydrží.",
     },
     {
         name: "Gordon Konečný",
         role: 'Majitel rodinného domu',
-        avatar: yellowAvatar,
+        avatar: avatarFive,
         content:
             "Dekorativní stěrky od Bédi ve starším objektu dopadly skvěle. Tým pracoval s citem pro detail, zachoval historický charakter místnosti a výsledek je opravdu unikátní. Spolupráce bez jediného zádrhelu.",
     },
@@ -90,7 +90,7 @@ const Testimonial6 = () => {
                                             {testimonial.content}
                                         </q>
                                         <div className="mt-6 flex gap-4 leading-5">
-                                            <Avatar className="size-9 rounded-full ring-1 ring-input">
+                                            <Avatar className="size-9 rounded-full ring-input">
                                                 <Image src={testimonial.avatar} alt={testimonial.name}></Image>
                                             </Avatar>
                                             <div className="text-sm">

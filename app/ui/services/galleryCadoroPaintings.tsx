@@ -8,10 +8,18 @@ import {
     CarouselPrevious,
 } from "@/components/ui/carousel";
 
-import beigePainting from "@/app/ui/assets-edited/sterka-bezova-edited.webp";
-import bluePainting from "@/app/ui/assets-edited/sterka-zluta-edited.webp";
+
+
 import Image from "next/image";
 import {TextAnimate} from "@/components/magicui/text-animate";
+
+import beigePainting from "@/app/ui/assets-edited/sterka-bezova-edited.webp";
+import bluePainting from "@/app/ui/assets-edited/sterka-zluta-edited.webp";
+import greyFirePainting from "@/app/ui/assets-edited/sterka-krb-edited.webp";
+import cadoroGreyFirePainting from "@/app/ui/assets-edited/cadoro-sedy-krb.webp";
+import cadoroGreyPainting from "@/app/ui/assets-edited/cadoro-seda-zed.webp";
+import cadoroGreyRoomPaintingWithOpenRoom from "@/app/ui/assets-edited/cadoro-seda-zed-s-pruchodem.webp";
+import greenPainting from "@/app/ui/assets-edited/sterka-tyrkysova-edited.webp";
 
 const images = [
     {
@@ -22,6 +30,28 @@ const images = [
         img: bluePainting,
         alt: "Modrá dekorativní stěrka",
     },
+    {
+        img: greyFirePainting,
+        alt: "Šedá dekorativní stěrka u krbu",
+    }
+    ,
+    {
+        img: cadoroGreyFirePainting,
+        alt: "Šedá dekorativní stěrka Cadoro u krbu",
+    },
+    {
+        img: cadoroGreyPainting,
+        alt: "Šedá dekorativní stěrka Cadoro na zdi",
+    },
+    {
+        img: cadoroGreyRoomPaintingWithOpenRoom,
+        alt: "Šedá dekorativní stěrka Cadoro na zdi s průchodem do další místnosti",
+    },
+    {
+        img: greenPainting,
+        alt: "Zelena dekorativní stěrka – akcentní efekt",
+    },
+
 ];
 
 const GalleryCaderoPaintings = () => {

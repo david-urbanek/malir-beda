@@ -26,7 +26,7 @@ const Contact14 = () => {
                                 <ul className="max-w-lg space-y-2 tracking-tight">
                                         <li className="flex items-center">
                                             <span className="mr-2 font-bold">Email:</span>{" "}
-                                            <a  className="text-foreground/80 hover:underline" href="mailto:info@malirbeda.cz?subject=Poptávka%20malování&body=Dobrý%20den,">
+                                            <a  className="text-foreground/80 hover:underline" href="mailto:info@malirbeda.cz?subject=Nová%20poptávka&body=Dobrý%20den,">
                                                 info@malirbeda.cz
                                             </a>
                                         </li>

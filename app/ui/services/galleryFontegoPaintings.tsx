@@ -11,22 +11,41 @@ import {
 import greyFirePainting from "@/app/ui/assets-edited/sterka-krb-edited.webp";
 import greyKitchenPainting from "@/app/ui/assets-edited/sterka-seda-kuchyn-edited.webp";
 import greyTvPainting from "@/app/ui/assets-edited/sterka-seda-televize-edited.webp";
+import fontegoGreyPainting from "@/app/ui/assets-edited/fontego-sede.webp";
+import fontegoGreyWoodPainting from "@/app/ui/assets-edited/fontego-sede-drevo.webp";
+import fontegoCopperPainting from "@/app/ui/assets-edited/fontego-medenna.webp";
+import fontegoGreyLivingPainting from "@/app/ui/assets-edited/fontego-sede-mistnost.webp";
+import fontegoCopperLivingPainting from "@/app/ui/assets-edited/fontego-medenna-mistnost.png";
+
 import Image from "next/image";
 import {TextAnimate} from "@/components/magicui/text-animate";
 
 const images = [
     {
-        img: greyFirePainting,
-        alt: "Šedá dekorativní stěrka (Luxury)",
+        img: fontegoGreyPainting,
+        alt: "Šedá stěrka v obývacím pokoji",
     },
     {
-        img: greyKitchenPainting,
-        alt: "Šedá stěrka v kuchyňském interiéru",
+        img: fontegoGreyWoodPainting,
+        alt: "Šedá stěrka v obývacím pokoji vedle dřevěného sloupu",
+    },
+    {
+        img: fontegoCopperPainting,
+        alt: "Měděná stěrka v obývacím pokoji",
+    },
+    {
+        img: fontegoGreyLivingPainting,
+        alt: "Šedá stěrka v obývacím pokoji",
+    },
+    {
+        img: fontegoCopperLivingPainting,
+        alt: "Měděná stěrka v obývacím pokoji",
     },
     {
         img: greyTvPainting,
-        alt: "Šedá stěrka za televizí v obývacím pokoji",
+        alt: "Šedá stěrka v obývacím pokoji s televizí",
     },
+
 ];
 
 const GalleryFontegoPaintings = () => {

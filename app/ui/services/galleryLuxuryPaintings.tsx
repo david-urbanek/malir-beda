@@ -8,16 +8,14 @@ import {
     CarouselPrevious,
 } from "@/components/ui/carousel";
 
-import greyPainting from "@/app/ui/assets-edited/sterka-bezova-edited.webp";
-import bluePainting from "@/app/ui/assets-edited/sterka-modra-edited.webp";
-import greyKitchenPainting from "@/app/ui/assets-edited/sterka-seda-kuchyn-edited.webp";
-import goldenPainting from "@/app/ui/assets-edited/sterka-zlata-edited.webp";
-import orangePainting from "@/app/ui/assets-edited/sterka-oranzova-edited.png";
-import greyTvPainting from "@/app/ui/assets-edited/sterka-seda-televize-edited.webp";
-import greenPainting from "@/app/ui/assets-edited/sterka-tyrkysova-edited.webp";
 import Image from "next/image";
 import {TextAnimate} from "@/components/magicui/text-animate";
 
+import bluePainting from "@/app/ui/assets-edited/sterka-modra-edited.webp";
+import goldenPainting from "@/app/ui/assets-edited/sterka-zlata-edited.webp";
+import orangePainting from "@/app/ui/assets-edited/sterka-oranzova-edited.png";
+import luxuryGreyLivingRoomPainting from "@/app/ui/assets-edited/luxury-sede-mistnost.webp";
+import luxuryGreyTablePainting from "@/app/ui/assets-edited/luxury-sede-stoly.webp";
 const images = [
     {
         img: orangePainting,
@@ -32,9 +30,15 @@ const images = [
         alt: "Zlatá dekorativní stěrka – akcentní efekt",
     },
     {
-        img: greenPainting,
-        alt: "Zelena dekorativní stěrka – akcentní efekt",
+        img: luxuryGreyLivingRoomPainting,
+        alt: "Šedá dekorativní stěrka Luxury v obývacím pokoji",
     },
+    {
+        img: luxuryGreyTablePainting,
+        alt: "Šedá dekorativní stěrka Luxury u jídelního stolu",
+    }
+
+
 ];
 
 const GalleryLuxuryPaintings = () => {

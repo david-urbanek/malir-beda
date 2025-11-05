@@ -1,7 +1,10 @@
 'use server';
 
+import NotificationEmail from "@/app/emails/notificationEmail";
+
 import { z } from "zod";
 import {Resend} from "resend";
+import newLeadEmail from "@/app/emails/newLeadEmail";
 
 const formSchema = z.object({
     name: z.string().min(1, "Zadejte své jméno."),
@@ -56,11 +59,20 @@ export async function handleFormSubmission(initialState: {message: string}, form
         }
     }
 
+    const {name, surname, email, phone, city, address, message} = validatedData.data;
+
     resend.emails.send({
-        from: 'onboarding@resend.dev',
-        to: 'urbanek.dav@email.cz',
-        subject: 'Hello World',
-        html: '<p>Congrats on sending your <strong>Second email</strong>!</p>'
+        from: 'info@malirbeda.cz',
+        to: 'bedrich.dufek@malirbeda.cz',
+        subject: `Nová poptávka od ${name} ${surname}`,
+        react: newLeadEmail({name, surname, email, phone, city, address, message}),
+    });
+
+    resend.emails.send({
+        from: 'info@malirbeda.cz',
+        to: `${validatedData.data.email}`,
+        subject: `Potvrzení o přijetí poptávky`,
+        react: NotificationEmail()
     });
 
     return {
@@ -70,5 +82,5 @@ export async function handleFormSubmission(initialState: {message: string}, form
     }
 
 
-    // Here you can handle the form data, e.g., save it to a database or send an email
+    // Here you can handle the form data, e.g., save it to a database or send an emails
 }
