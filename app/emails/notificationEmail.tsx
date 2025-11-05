@@ -100,8 +100,8 @@ export default function NotificationEmail() {
                         <Row className='max-w-32 max-h-16 mt-[16px]'>
                             <Img
                                 alt="Logo firmy Malíř Béďa"
-                                className="w-full object-cover"
-                                height={288}
+                                className="bject-cover"
+                                height={16}
                                 src="https://www.malirbeda.cz/logo/malir-beda-logo.png"
                             />
                         </Row>
