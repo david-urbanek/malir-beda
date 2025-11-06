@@ -1,5 +1,9 @@
 import {GalleryWallpapers} from "@/app/ui/services/galleryWallpapers";
+import {Metadata} from "next";
 
+export const metadata: Metadata = {
+    title: 'Tapetování',
+};
 
 export default function Page() {
     return (
