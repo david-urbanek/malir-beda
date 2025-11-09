@@ -148,11 +148,11 @@ const Hero210 = () => {
                 </div>
 
                 <div className="relative mx-auto mt-4 flex w-fit justify-center">
-                    <Button className="px-4 py-2 active:scale-105 bg-blue-400 hover:bg-blue-500">
-                        <Link href="/kontakt">
+                    <Link href="/kontakt">
+                        <Button className="px-6 py-2 active:scale-105 bg-blue-500 hover:bg-blue-600 shadow-lg">
                             Kontaktujte mě
-                        </Link>
-                    </Button>
+                        </Button>
+                    </Link>
                 </div>
             </div>
         </section>

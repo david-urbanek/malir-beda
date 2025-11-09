@@ -149,10 +149,10 @@ const MobileNav = ({
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className="block flex h-full items-center lg:hidden">
+        <div className="block h-full items-center lg:hidden">
             <Popover open={isOpen} onOpenChange={setIsOpen}>
                 <PopoverTrigger asChild>
-                    <Button variant="ghost" size="icon">
+                    <Button variant="ghost" size="icon" aria-label="Toggle Menu">
                         <AnimatedHamburger isOpen={isOpen} />
                     </Button>
                 </PopoverTrigger>

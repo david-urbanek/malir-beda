@@ -209,7 +209,7 @@ export default function ContactForm() {
                         {state.errors?.message && <FieldError>{state.errors.message}</FieldError>}
 
                         {/* --- Tlačítko --- */}
-                        <Button disabled={pending} className='bg-blue-400 hover:bg-blue-500'>
+                        <Button disabled={pending} className='bg-blue-500 hover:bg-blue-600 shadow-lg'>
                             {pending ? "Odesílání..." : "Odeslat nezávaznou poptávku"}
                         </Button>
                     </FieldGroup>

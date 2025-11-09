@@ -9,7 +9,7 @@ import {Carousel, CarouselContent, CarouselItem,} from "@/components/components/
 import {TextAnimate} from "@/components/magicui/text-animate";
 
 
-import greyPainting from "@/app/ui/home-page/assets/sterka-seda.jpg";
+import beigePainting from "@/app/ui/assets-edited/sterka-bezova-edited.webp";
 import interiorPainting from "@/app/ui/home-page/assets/interier-malba.webp";
 import greenWallpaper from "@/app/ui/home-page/assets/tapeta-zelena.webp";
 import Image from "next/image";
@@ -26,7 +26,7 @@ const data = [
         title: "Dekorační stěrky: Luxusní povrchy pro Váš interiér",
         description: "Luxusní dekorační stěrky promění Váš interiér v nadčasový prostor plný elegance, originality a moderního stylu. Vhodné pro moderní i klasické prostory, kde vynikne hra světla a textur.",
         href: "/sluzby/sterky",
-        image: greyPainting,
+        image: beigePainting,
     },
     {
         id: "interior-painting",
@@ -91,6 +91,7 @@ const Gallery4 = ({
                             }}
                             disabled={!canScrollPrev}
                             className="disabled:pointer-events-auto"
+                            aria-label="Arrow left"
                         >
                             <ArrowLeft className="size-5"/>
                         </Button>
@@ -102,6 +103,7 @@ const Gallery4 = ({
                             }}
                             disabled={!canScrollNext}
                             className="disabled:pointer-events-auto"
+                            aria-label="Arrow left"
                         >
                             <ArrowRight className="size-5"/>
                         </Button>

@@ -4,7 +4,7 @@ import React from "react";
 import Image from "next/image";
 
 import greyKitchenPainting from '@/app/ui/home-page/assets/sterka-kuchyne-seda.jpg'
-import greyStairsPainting from '@/app/ui/home-page/assets/sterka-schody-seda.jpg'
+import greyStairsPainting from '@/app/ui/assets-edited/sterka-interier.png'
 import orangePainting from '@/app/ui/home-page/assets/sterka-oranzova.png'
 
 const About2 = () => {
@@ -78,7 +78,7 @@ const About2 = () => {
                                 />
                                 <span>+</span>
                             </div>
-                            <p className="text-muted-foreground">Pokojů, které už dýchají novou energii</p>
+                            <p className="text-muted-foreground">Pokojů, které už dýchají novou energií</p>
                         </div>
                     </div>
                 </div>
