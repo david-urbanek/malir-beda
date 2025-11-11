@@ -14,9 +14,9 @@ const inter = Inter({
 export const metadata: Metadata = {
     title: {
         template: "%s | Malíř Béďa",
-        default: "Malíř Béďa – Specialista na dekorační stěrky a malířské práce"
+        default: "Dekorativní stěrky a malířské práce - Malíř Béďa"
     },
-    description: "Jsem malíř, který specializuje se na dekorační stěrky, které dodají interiéru jedinečný vzhled a charakter. Používám pouze osvědčené značky jako San Marco a Primalex, které zaručují kvalitu i dlouhou životnost. Rád Vám poradím s výběrem materiálů a barev, aby výsledek přesně odpovídal Vašim představám.",
+    description: "Jsem malíř, který specializuje se na dekorativní stěrky, které dodají interiéru jedinečný vzhled a charakter. Používám pouze osvědčené značky jako San Marco a Primalex, které zaručují kvalitu i dlouhou životnost. Rád Vám poradím s výběrem materiálů a barev, aby výsledek přesně odpovídal Vašim představám.",
 };
 
 export default function RootLayout({
