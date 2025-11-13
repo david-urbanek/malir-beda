@@ -19,7 +19,7 @@ const formSchema = z.object({
 export type FormState = {
     message: string
     success: boolean
-    errors: {
+    errors?: {
         name?: string
         surname?: string
         email?: string
@@ -61,19 +61,37 @@ export async function handleFormSubmission(initialState: {message: string}, form
 
     const {name, surname, email, phone, city, address, message} = validatedData.data;
 
-    resend.emails.send({
+
+
+    const { data: leadData, error: leadError } = await resend.emails.send({
         from: 'info@malirbeda.cz',
         to: 'bedrich.dufek@malirbeda.cz',
         subject: `Nová poptávka od ${name} ${surname}`,
         react: newLeadEmail({name, surname, email, phone, city, address, message}),
     });
 
-    resend.emails.send({
+    if (leadError) {
+        return {
+            message: 'Nastala chyba při odesílání formuláře. Zkuste nás kontaktovat telefonicky nebo pomocí našeho emailu.',
+            success: false,
+            errors: {}
+        }
+    }
+
+    const { data: notificationData , error: notificationError} = await resend.emails.send({
         from: 'info@malirbeda.cz',
         to: `${validatedData.data.email}`,
         subject: `Potvrzení o přijetí poptávky`,
         react: NotificationEmail()
     });
+
+    if (notificationError) {
+        return {
+            message: 'Nastala chyba při odesílání formuláře. Zkuste nás kontaktovat telefonicky nebo pomocí našeho emailu.',
+            success: false,
+            errors: {}
+        }
+    }
 
     return {
         message: 'Váše poptávka byla úspěšně odeslána. Brzy Vás budu kontaktovat.',

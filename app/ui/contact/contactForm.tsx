@@ -97,7 +97,7 @@ export default function ContactForm() {
                         <div className="flex gap-4">
                             <div>
                                 <Field>
-                                    <FieldLabel htmlFor="name">Jméno:</FieldLabel>
+                                    <FieldLabel htmlFor="name">Jméno*:</FieldLabel>
                                     <Input
                                         id="name"
                                         name="name"
@@ -112,7 +112,7 @@ export default function ContactForm() {
 
                             <div>
                                 <Field>
-                                    <FieldLabel htmlFor="surname">Příjmení:</FieldLabel>
+                                    <FieldLabel htmlFor="surname">Příjmení*:</FieldLabel>
                                     <Input
                                         id="surname"
                                         name="surname"
@@ -127,7 +127,7 @@ export default function ContactForm() {
                         </div>
 
                         <Field>
-                            <FieldLabel htmlFor="email">Email:</FieldLabel>
+                            <FieldLabel htmlFor="email">Email*:</FieldLabel>
                             <Input
                                 id="email"
                                 name="email"
@@ -140,7 +140,7 @@ export default function ContactForm() {
                         </Field>
 
                         <Field>
-                            <FieldLabel htmlFor="phone">Telefon:</FieldLabel>
+                            <FieldLabel htmlFor="phone">Telefon*:</FieldLabel>
                             <Input
                                 id="phone"
                                 name="phone"
@@ -163,7 +163,7 @@ export default function ContactForm() {
                         <div className="flex gap-4">
                             <div>
                                 <Field>
-                                    <FieldLabel htmlFor="city">Město:</FieldLabel>
+                                    <FieldLabel htmlFor="city">Město*:</FieldLabel>
                                     <Input
                                         id="city"
                                         name="city"
@@ -178,7 +178,7 @@ export default function ContactForm() {
 
                             <div>
                                 <Field>
-                                    <FieldLabel htmlFor="address">Ulice + Číslo:</FieldLabel>
+                                    <FieldLabel htmlFor="address">Ulice + Číslo*:</FieldLabel>
                                     <Input
                                         id="address"
                                         name="address"
