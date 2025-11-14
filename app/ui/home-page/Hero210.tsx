@@ -89,7 +89,7 @@ const Hero210 = () => {
             <div className="container">
                 <div className="mx-auto flex max-w-2xl flex-col items-center justify-center gap-8">
                     <TextAnimate animation="blurInUp" by="character" as="h1" duration={0.6}
-                                 className="sm:whitespace-nowrap">
+                                 className="sm:whitespace-nowrap text-center">
                         Malíř pro všechny Vaše projekty
                     </TextAnimate>
                     <p className="text-center lg:text-lg">

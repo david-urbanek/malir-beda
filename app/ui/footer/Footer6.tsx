@@ -1,4 +1,5 @@
 import Image from "next/image";
+import {StarHalfIcon, StarIcon} from "lucide-react";
 
 const sitemap = [
     {
@@ -69,9 +70,16 @@ const Footer6 = () => {
                             &copy; malirbeda.cz {date}
                         </div>
                         <div className="text-muted-foreground flex flex-col items-start gap-4 text-xs sm:text-sm md:flex-row lg:items-center">
-                            <a href="#" className="hover:text-accent-foreground">
-                                Terms & Conditions
+                            <div className='flex gap-2 items-center justify-center'>
+                                <StarIcon className='h-4 w-4 text-yellow-400'></StarIcon>
+                                <StarIcon className='h-4 w-4 text-yellow-400'></StarIcon>
+                                <StarHalfIcon className='h-4 w-4 text-yellow-400 animate-bounce'></StarHalfIcon>
+                                <a href="https://g.page/r/Cf17MS_-PCjAEBM/review"
+                                    className="text-blue-500 hover:text-blue-600 hover:underline">
+                                Odkaz na recenze
                             </a>
+
+                            </div>
                             <a href="#" className="hover:text-accent-foreground">
                                 Privacy Policy
                             </a>
