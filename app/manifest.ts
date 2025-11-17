@@ -4,7 +4,7 @@ export default function manifest(): MetadataRoute.Manifest {
     return {
         name: 'Malíř Béďa',
         short_name: 'Malíř Béďa',
-        description: 'Malíř Béďa – Specialista na dekorační stěrky a malířské práce',
+        description: 'Dekorativní stěrky a malířské práce - Malíř Béďa',
         start_url: '/',
         display: 'standalone',
         background_color: '#ffffff',
